@@ -1,0 +1,187 @@
+$theme-colors: (
+  "primary": green,
+  "secondary": #779e70,
+  "success": #13ea36,
+  "info": #ff7d50,
+  "warning": #ffbe0b,
+  "danger": #ddf8d7,
+  // "light": #c0ccda,
+  "light": #d9d9d9,
+
+  "dark": #001738,
+  // "peace": linear-gradient(to right, #fdfc47, #24fe41),
+);
+
+@import "/node_modules/bootstrap/scss/bootstrap.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,700;1,400&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+*,
+html {
+  font-family: "Poppins", sans-serif;
+  @media (max-width: 768px) {
+    font-size: 14px;
+  }
+}
+// Header comp
+// header {
+
+// }
+.phone {
+  color: black;
+  text-decoration: none;
+}
+.home {
+  text-decoration: none;
+}
+.bar {
+  color: white !important;
+}
+
+// carousel
+.caro1 {
+  min-height: 50vh;
+  // background-color: #ff007f;
+
+  .carousel-item {
+    height: 40vh;
+    // background-color: #13ea36;
+  }
+  img {
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+}
+// below carousel
+.card1-text {
+  font-size: 1.4rem;
+  color: #001738;
+  font-weight: 600;
+  .card1-icon {
+    font-size: 1.4rem;
+    color: #13ea36;
+    font-weight: 900;
+    margin-right: 0.5rem;
+  }
+}
+
+//  services
+// request
+.req-text {
+  font-weight: 600;
+}
+.f-hr {
+  border: 2px solid #add9bd;
+}
+// .sub-footer{
+//   background-color: #004e6d;
+// }
+
+//industries
+// }
+// .industry {
+//   background: url("/pexels-adrien-olichon-2387532.jpg");
+//   background-repeat: no-repeat;
+//   background-size: cover;
+// }
+// .industry-sub {
+//   background: #fdfc47; /* fallback for old browsers */
+//   background: -webkit-linear-gradient(
+//     to right,
+//     #f2cd5c,
+//     #fdfc47
+//   ); /* Chrome 10-25, Safari 5.1-6 */
+//   background: #DDF8D7;
+//   linear-gradient(
+//     to right,
+//     rgba(242, 205, 92, 0.2),
+//     // #001738,
+//     rgba(253, 252, 71, 0.5)
+//   ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+// }
+
+.industry-sub {
+  background-color: #ddf8d7;
+  background: url("/background5.png") no-repeat;
+  background-size: cover;
+}
+.hr-sub {
+  border: 2px solid;
+  width: 50px;
+}
+.nav-bg {
+  background-color: #779e70;
+  color: #ddf8d7;
+}
+// button {
+//   background: linear-gradient(to right, #24fe41, #fdfc47) !important;
+// }
+.right-div-image {
+  max-width: 100%;
+  // min-height: 20px;
+  height: auto;
+}
+
+// servicepage
+.service-page {
+  // .active {
+  //   background-color: #13ea36;
+  //   color: red;
+  // }
+  .nav-link[data-bs-target] {
+  }
+
+  .nav-link[data-bs-target]:hover {
+    // color: var(--bs-btn-hover-color);
+    background-color: #13ea36;
+
+    // border-color: var(--bs-btn-hover-border-color);
+  }
+  .nav-link[data-bs-target].active {
+    background-color: #13ea36;
+  }
+}
+.service-leftdiv-image {
+  max-width: 100%;
+  // min-height: 20px;
+  height: auto;
+}
+.p-services {
+  text-align: justify;
+}
+// .nav-pills > .active > a,
+// .nav-pills > .active > a:hover {
+//   background-color: red;
+// }
+
+@media (min-width: 768px) {
+  .bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .caro1 {
+    min-height: 80vh;
+    // background-color: #001738;
+
+    .carousel-item {
+      height: 80vh;
+      // background-color: red;
+    }
+  }
+  // .card2 {
+  //   height: 2rem;
+  //   background-color: red;
+  // }
+  .service-leftdiv-image {
+    max-width: 100%;
+    // min-height: 20px;
+    height: 70vh;
+    // background: red;
+  }
+}
